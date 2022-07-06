@@ -2,26 +2,58 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing:border-box;
+ 
 }
 body{
     background-color:rgb(54, 54, 54);
 
 }
-/* contents */
-h1{ 
-    margin-top:4vh;
-    color:white;
-    font-size:2.5rem;
-    text-align:center;
-}
-/* Box-master */
-.box-master{
-    background-color:white;
-    width:30vw;
-    height:60vh;
-    margin-top:20vh;
-    border-radius:10px;
+/* title */
+h1{
     display:flex;
     justify-content:center;
+    margin-top:5vh;
+    font-size:2.5rem;
+    color:white;
+}
+/* box-master */
+.box-master{
+    background-color:rgb(73, 69, 69);
+    height:60vh;
+    width:20vw;
+    margin-top:16vh;
+    margin-left:41vw;
+    border-radius:10px;
+}
+/* input */
+.input{
+    margin-left:3vw;
+    width:15vw;
+    background-color:white;
+    height:6vh;
+
+}
+
+/* table */ 
+table{
+    display:flex;
+    justify-content:center;
+    margin-top:10vh;
+}
+/* the lines */
+ button{
+    border:none;
+    background-color:rgb(31, 31, 31);
+    color:white;
+    font-weight:bold;
+    width:4vw;
+    height:8vh;
+}
+/* zero anda igual */
+.igual{
+    background-color:rgb(242, 122, 81);
+}
+.zero{
+    
 }
