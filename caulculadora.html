@@ -12,8 +12,10 @@
   <h1>Caulculadora</h1>
   <!-- contents -->
   <div class="box-master">
+    <span>-------</span>
     <div class="input">
-      <p id="resultado"></p>
+      <span class="span2">------</span>
+      <p id="resultado">100</p>
     </div>
     <!-- table -->
     <table>
@@ -43,11 +45,11 @@
         <td><button>1</button></td>
         <td><button>2</button></td>
         <td><button>3</button></td>
-        <td><button class="igual">=</button></td>
+        <td rowspan="2"><button class="igual">=</button></td>
       </tr>
       <!-- line 5 -->
       <tr>
-        <td><button class="zero">0</button></td>
+        <td colspan="2"><button class="zero">0</button></td>
         <td><button>.</button></td>    
       </tr>
 

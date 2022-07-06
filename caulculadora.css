@@ -13,8 +13,9 @@ body{
 h1{
     display:flex;
     justify-content:center;
+    margin-left:2vw;
     margin-top:5vh;
-    font-size:2.5rem;
+    font-size:2.6rem;
     color:white;
 }
 /* box-master */
@@ -28,18 +29,23 @@ h1{
 }
 /* input */
 .input{
-    margin-left:3vw;
-    width:15vw;
+    margin-top:2vh;
+    margin-left:2vw;
+    width:16vw;
     background-color:white;
-    height:6vh;
+    height:9vh;
+    border-radius:5px;
 
+}
+span{
+    color:rgb(73, 69, 69);
 }
 
 /* table */ 
 table{
     display:flex;
     justify-content:center;
-    margin-top:10vh;
+    margin-top:3vh;
 }
 /* the lines */
  button{
@@ -50,10 +56,22 @@ table{
     width:4vw;
     height:8vh;
 }
+#resultado{
+    text-align:right;
+    font-weight:bold;
+    font-size:1.9rem;
+    margin-inline:10px;
+}
+/* span2 */
+.span2{
+    color:white;
+}
+
 /* zero anda igual */
 .igual{
     background-color:rgb(242, 122, 81);
+    height:16vh;    
 }
 .zero{
-    
+    width:8.4vw;
 }
