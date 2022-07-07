@@ -55,6 +55,7 @@ table{
     font-weight:bold;
     width:4vw;
     height:8vh;
+    transition:0.3s all;
 }
 #resultado{
     text-align:right;
@@ -74,4 +75,8 @@ table{
 }
 .zero{
     width:8.4vw;
+}
+/* hovers */
+button:hover{
+    background-color:black;
 }
