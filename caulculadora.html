@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=[device-width], initial-scale=1.0">
   <link rel="stylesheet" href="caulculadora.css">
   <title>Caulculadora</title>
+  <script src="caulculadora.js"></script>
 </head>
 <body>
   <!-- title -->
@@ -21,35 +22,35 @@
     <table>
       <!-- line 1 -->
       <tr>
-        <td><button>R</button></td>
+        <td><button onclick="resetar()">R</button></td>
         <td><button><</button></td>
         <td><button>/</button></td>
         <td><button>X</button></td>
       </tr>
       <!-- line 2 -->
       <tr>
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
+        <td><button onclick="numero(7)">7</button></td>
+        <td><button onclick="numero(8)">8</button></td>
+        <td><button onclick="numero(9)">9</button></td>
         <td><button>-</button></td>
       </tr>
       <!-- line 3 -->
       <tr>
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
-        <td><button>+</button></td>
+        <td><button onclick="numero(4)">4</button></td>
+        <td><button onclick="numero(5)">5</button></td>
+        <td><button onclick="numero(6)">6</button></td>
+        <td><button onclick="plus()">+</button></td>
       </tr>
       <!-- line 4 -->
       <tr>
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
+        <td><button onclick="numero(1)">1</button></td>
+        <td><button onclick="numero(2)">2</button></td>
+        <td><button onclick="numero(3)">3</button></td>
         <td rowspan="2"><button class="igual">=</button></td>
       </tr>
       <!-- line 5 -->
       <tr>
-        <td colspan="2"><button class="zero">0</button></td>
+        <td colspan="2"><button class="zero" onclick="numero(0)">0</button></td>
         <td><button>.</button></td>    
       </tr>
 
