@@ -1,6 +1,6 @@
 // var global
-var global1= 0;
-var global2= 0;
+var global1 = 0
+var global2 = 0
 
 //function de digitar o numero
 function digitar(x){
@@ -19,8 +19,8 @@ function plus(){
     global1 = document.getElementById('resultado').innerText;
     document.getElementById('resultado').innerText = 0;
     global2 = document.getElementById('resultado').innerText;
-    result = global1 + global2;
-    
-
-   
 }
+function igual(){
+    alert(global2);
+}
+
