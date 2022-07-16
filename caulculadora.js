@@ -1,6 +1,6 @@
 // var global
-var global1 = 0
-var global2 = 0
+var global = 0
+var op = '';
 
 //function de digitar o numero
 function digitar(x){
@@ -15,12 +15,42 @@ function digitar(x){
 function reset(){
     document.getElementById('resultado').innerText = 0;
 }
-function plus(){
-    global1 = document.getElementById('resultado').innerText;
+function ope(operador){
+    x =parseInt(document.getElementById('resultado').innerText);
     document.getElementById('resultado').innerText = 0;
-    global2 = document.getElementById('resultado').innerText;
+    if(operador == '+'){
+        global = global + x;
+        op = '+'
+    }
+    else if(operador == '='){
+        if(op == '+'){
+            global = global + x;
+        }
+        else if(op == '-'){
+            global = global - x;
+        }
+        else if(op == '*'){
+            global = global * x;
+        }
+        else if(op == '/'){
+            global = global / x;
+        }
+        document.getElementById('resultado').innerText = global;
+        global = 0;
+        op = '';
+    }
+    else if(operador == '-'){
+        global = x - global;
+        op = '-'
+    }
+    else if(operador == '*'){
+        global = x * global;
+        op = '*'
+    }
+    else if(operador == '/'){
+        global =global / x;
+        op='/';
+    }
 }
-function igual(){
-    alert(global2);
-}
+
 
