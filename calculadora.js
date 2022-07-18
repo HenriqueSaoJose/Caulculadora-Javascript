@@ -15,6 +15,7 @@ function digitar(x){
 function reset(){
     document.getElementById('resultado').innerText = 0;
 }
+
 function ope(operador){
     x =parseInt(document.getElementById('resultado').innerText);
     document.getElementById('resultado').innerText = 0;
@@ -22,6 +23,25 @@ function ope(operador){
         global = global + x;
         op = '+'
     }
+    else if(operador == '-'){
+        global = x - global ;
+        op = '-'
+    }
+    else if(operador == '*'){
+        if( op == '' & global == 0) {global = 1}
+        global = x * global;
+        op = '*'
+    }
+    else if(operador == '/'){
+        if(op == ''& global == 0){global =1}
+        global = x/global;
+        op= '/';
+    }
+    else if(operador == '<'){
+        op = '<'
+
+    }
+    
     else if(operador == '='){
         if(op == '+'){
             global = global + x;
@@ -39,18 +59,8 @@ function ope(operador){
         global = 0;
         op = '';
     }
-    else if(operador == '-'){
-        global = x - global;
-        op = '-'
-    }
-    else if(operador == '*'){
-        global = x * global;
-        op = '*'
-    }
-    else if(operador == '/'){
-        global =global / x;
-        op='/';
-    }
+
 }
-
-
+for(x in global){
+    x*X
+}
