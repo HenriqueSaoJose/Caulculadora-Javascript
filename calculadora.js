@@ -38,8 +38,11 @@ function ope(operador){
         op= '/';
     }
     else if(operador == '<'){
+        for(global in operador){
+            var result = x*x;
+        }
         op = '<'
-
+        global = result
     }
     
     else if(operador == '='){
@@ -55,12 +58,13 @@ function ope(operador){
         else if(op == '/'){
             global = global / x;
         }
+        else if(op=='<'){
+            global = global;
+        }
         document.getElementById('resultado').innerText = global;
         global = 0;
         op = '';
     }
 
 }
-for(x in global){
-    x*X
-}
+
