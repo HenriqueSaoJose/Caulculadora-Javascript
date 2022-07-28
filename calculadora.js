@@ -38,11 +38,9 @@ function ope(operador){
         op= '/';
     }
     else if(operador == '<'){
-        for(global in operador){
-            var result = x*x;
-        }
-        op = '<'
-        global = result
+        if(op == '' & global == 0 ){global=1}
+        global = x
+        op = '<' 
     }
     
     else if(operador == '='){
@@ -59,8 +57,13 @@ function ope(operador){
             global = global / x;
         }
         else if(op=='<'){
-            global = global;
+            res = global;
+            for( cto=1;cto < x ;cto++){
+                res = res * global
+            }
+            global = res
         }
+
         document.getElementById('resultado').innerText = global;
         global = 0;
         op = '';
